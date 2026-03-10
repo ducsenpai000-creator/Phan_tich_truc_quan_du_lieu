@@ -1,34 +1,34 @@
 # BÀI 8: XÂY DỰNG FUNCTION TRONG R
 
 ## Mục tiêu học tập
-- Hiểu khái niệm và vai trò của function trong lập trình R
-- Nắm vững cú pháp khai báo và định nghĩa function
-- Phân biệt các loại tham số và giá trị trả về
-- Xây dựng được các function đơn giản và phức tạp
-- Áp dụng function vào giải quyết bài toán thực tế
-
----
+# - Hiểu khái niệm và vai trò của function trong lập trình R
+# - Nắm vững cú pháp khai báo và định nghĩa function
+# - Phân biệt các loại tham số và giá trị trả về
+# - Xây dựng được các function đơn giản và phức tạp
+# - Áp dụng function vào giải quyết bài toán thực tế
+# 
+# ---
   
   ## 3.1 Giới thiệu về Function
   
   ### 3.1.1 Function là gì?
-  
-  Function (hàm) là một khối mã được đặt tên, có thể được tái sử dụng nhiều lần trong chương trình. Function giúp:
-  - **Tổ chức code**: Chia nhỏ chương trình thành các phần có chức năng rõ ràng
-- **Tái sử dụng**: Viết một lần, sử dụng nhiều lần
-- **Dễ bảo trì**: Sửa lỗi hoặc cải tiến chỉ cần sửa ở một chỗ
-- **Dễ đọc**: Code rõ ràng, dễ hiểu hơn
+#   
+#   Function (hàm) là một khối mã được đặt tên, có thể được tái sử dụng nhiều lần trong chương trình. Function giúp:
+#   - **Tổ chức code**: Chia nhỏ chương trình thành các phần có chức năng rõ ràng
+# - **Tái sử dụng**: Viết một lần, sử dụng nhiều lần
+# - **Dễ bảo trì**: Sửa lỗi hoặc cải tiến chỉ cần sửa ở một chỗ
+# - **Dễ đọc**: Code rõ ràng, dễ hiểu hơn
 
 ### 3.1.2 Phân loại Function trong R
-
-R có hai loại function chính:
-  1. **Built-in Functions**: Hàm có sẵn trong R
-- `mean()`, `sum()`, `print()`, `length()`, ...
-
-2. **User-defined Functions**: Hàm do người dùng tự định nghĩa
-- Tạo ra để giải quyết bài toán cụ thể
-
-```r
+# 
+# R có hai loại function chính:
+#   1. **Built-in Functions**: Hàm có sẵn trong R
+# - `mean()`, `sum()`, `print()`, `length()`, ...
+# 
+# 2. **User-defined Functions**: Hàm do người dùng tự định nghĩa
+# - Tạo ra để giải quyết bài toán cụ thể
+# 
+# ```r
 # Ví dụ Built-in function
 numbers <- c(1, 2, 3, 4, 5)
 mean(numbers)    # 3
