@@ -354,13 +354,13 @@ test$HalfBath = factor(test$HalfBath,
                        labels = c("0 Room", "1 Room", "2 Room"))
 
 #đổi các cột có đơn vị feet vuông
-cols_sqft <- c("BsmtFinSF1", "BsmtFinSF2", "BsmtUnfSF", "TotalBsmtSF", "X1stFlrSF", "X2ndFlrSF", "LowQualFinSF", "GrLivArea", "LotArea", "MasVnrArea")
+cols_sqft = c("BsmtFinSF1", "BsmtFinSF2", "BsmtUnfSF", "TotalBsmtSF", "X1stFlrSF", "X2ndFlrSF", "LowQualFinSF", "GrLivArea", "LotArea", "MasVnrArea")
 
 #gán NA bằng 0 và thêm đơn vị
-test[cols_sqft] <- lapply(test[cols_sqft], function(x) paste(replace(x, is.na(x), 0), "sqft"))
+test[cols_sqft] = lapply(test[cols_sqft], function(x) paste(replace(x, is.na(x), 0), "sqft"))
 
 #đối các cột có đơn vị feet 
-test$LotFrontage <- paste(test$LotFrontage, "ft")
+test$LotFrontage = paste(test$LotFrontage, "ft")
 
 #kiểm tra tổng quát NA sau làm sạch
 sum(is.na(test))
